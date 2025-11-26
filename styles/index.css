@@ -1,0 +1,184 @@
+body {
+    margin: 0;
+    padding: 0;
+    overflow: hidden;
+}
+
+.background {
+    width: 100vw;
+    height: 100vh;
+    margin: 0;
+    
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: flex-start;
+}
+
+.login-box {
+    width: 80vw;
+    height: 30vh;
+
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+
+    margin-top: 4rem;
+    
+    color: white;
+
+    position: relative;
+}
+
+.error-and-login {
+    width: 100%;
+    height: 20%;
+    max-height: 42px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    bottom: 25px;
+    position: absolute;
+}
+
+.checkbox-box {
+    width: 100%;
+    height: 25%;
+    transform: translateY(-12px);
+}
+
+.checkbox-box {
+    font-size: 12px;
+}
+
+.input-box {
+    width: 70%;
+    display: flex;
+    flex-direction: column;
+
+    margin: 0.2rem 0;
+}
+
+.input-box label {
+    margin-bottom: .4rem;
+}
+
+.login-button {
+    width: 30%;
+    height: 67%;
+    max-height: 28px;
+    position: relative;
+    margin: 0;
+
+    border: 1px solid black;
+    border-radius: 5px;
+    outline: none;
+}
+
+#err-msg {
+    margin: 0;
+    color: red;
+    font-size: 12px;
+}
+
+/* Birthday Puzzle */
+.birthday-puzzle {
+    display: none;
+    flex-direction: column;
+    align-items: center;
+
+    width: 100%;
+    height: 11vh;
+    margin: 0;
+}
+
+.months-puzzle {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    width: 95%;
+}
+
+.months-puzzle h4 {
+    text-align: center;
+}
+
+.months-puzzle div {
+    display: flex;
+    flex-direction: row;
+}
+
+.months-puzzle select {
+    height: 25px;
+}
+
+.date-puzzle {
+    display: flex;
+    flex-direction: column;
+    margin-top: .8rem;
+    align-items: center;
+    width: 100%;
+}
+
+.date-puzzle input {
+    width: 80%;
+}
+
+.year-puzzle {
+    display: flex;
+    flex-direction: column;
+    margin-top: .8rem;
+    align-items: center;
+    width: 100%;
+}
+
+.year-puzzle .div1 {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: center;
+    margin: .2rem 0;
+}
+
+.year-puzzle .div1 p {
+    margin: auto .3rem;
+}
+
+.year-puzzle input {
+    width: 20%;
+    height: 20px;
+}
+
+/* Color puzzle */
+.color-puzzle {
+    display: none;
+    flex-direction: column;
+    align-items: center;
+
+    width: 100%;
+    height: 11vh;
+    margin: 0;
+}
+
+.rgb-inputs-box {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: center;
+}
+
+.rgb-inputs-box div {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    margin: 0 .2rem;
+    width: 25%;
+}
+
+.color-puzzle input {
+    width: 35%;
+}
+
+@media screen and (min-width: 1200px) {
+
+}

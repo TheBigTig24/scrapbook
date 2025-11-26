@@ -1,0 +1,110 @@
+<!DOCTYPE html>
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Login</title>
+
+    <!-- Styles -->
+    <link rel="stylesheet" href="/styles/index.css">
+    <link rel="stylesheet" href="/styles/global.css">
+
+    <!-- Javascript -->
+    <script src="/scripts/index.js"></script>
+</head>
+<body>
+    <div class="background lightergreen">
+        <div class="login-box darkgreen">
+
+            <!-- Basic Login -->
+            <h2>Log In Here!</h2>
+            <div class="input-box">
+                <label for="username">Enter Thy Name</label>
+                <input type="text" id="username">
+            </div>
+            <div class="input-box">
+                <label for="password">Enter Password for Access</label>
+                <input type="password" id="password">
+            </div>
+
+            <!-- Birthday Puzzle -->
+            <div class="birthday-puzzle">
+                <div style="
+                    width: 90%;
+                    height: 0px;
+                    border: 1px solid rgb(17, 17, 17);
+                    margin: 1rem 0 0 0;
+                    padding: 0;"></div>
+                <div class="months-puzzle">
+                    <h4>Prove your worth! What is the queen's birthday?</h4>
+                    <div>
+                        <select id="months1"></select>
+                        <select id="months2"></select>
+                        <select id="months3"></select>
+                    </div>
+                </div>
+                <div class="date-puzzle">
+                    <label for="date-slider">Date Picked: <strong id="date-here">0</strong></label>
+                    <input 
+                        type="range"
+                        id="date-slider"
+                        min="-100"
+                        max="100"
+                        value="0"
+                        step="1"
+                    >
+                </div>
+                <div class="year-puzzle">
+                    <label>Year:</label>
+                    <div class="div1">
+                        <input id="year-input1" type="number">
+                        <p> * </p>
+                        <input id="year-input2" type="number">
+                        <p> + </p>
+                        <input id="year-input3" type="number">
+                    </div>
+                    <div>
+                        <p> = <strong id="year-output">0</strong    ></p>
+                    </div>
+
+                </div>
+            </div>
+
+            <!-- Color Puzzle -->
+            <!-- <div class="color-puzzle">
+                <div style="
+                    width: 90%;
+                    height: 0px;
+                    border: 1px solid rgb(17, 17, 17);
+                    margin: 1rem 0 0 0;
+                    padding: 0;"></div>
+                <div class="rgb-inputs-box">
+                    <div>
+                        <label for="r-color">R: <span>0</span></label>
+                        <input id="r-color" type="number">
+                    </div>
+                    <div>
+                        <label for="g-color">G: <span>0</span></label>
+                        <input id="g-color" type="number">
+                    </div>
+                    <div>
+                        <label for="b-color">B: <span>0</span></label>
+                        <input id="b-color" type="number">
+                    </div>
+                </div>
+            </div> -->
+
+            <div class="error-and-login">
+                <div class="checkbox-box">
+                    <input type="checkbox" id="no-future-questions">
+                    <label for="no-future-questions">Check = Next Login will not ask questions.</label>
+                </div>
+                <p id="err-msg"></p>
+                <button 
+                    type="button" 
+                    class="login-button beige"
+                    >Click to Login!</button>
+            </div>
+
+        </div>
+    </div>
+</body>
